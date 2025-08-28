@@ -9,9 +9,6 @@ import Loading from '../feedback/Loading'
 function ToDoList() {
   const todos = useQuery(api.todos.getTodos);
 
-  console.log(todos);
-  
-
   if (todos === undefined) {
     return (
       <Loading/>

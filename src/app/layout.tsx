@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <ConvexClientProvider>
           <NavBar />
-          <main className="px-2 md:px-4 grow flex flex-col">{children}</main>
+          <main className="px-2 md:px-4 grow flex flex-col container mx-auto">{children}</main>
         </ConvexClientProvider>
       </body>
     </html>
