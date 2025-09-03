@@ -14,13 +14,8 @@ import {
 import { Input } from "../ui/input";
 import { useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
+import { createToDoFormSchema as formSchema } from "@/lib/zod";
 
-// z form schema for validation
-const formSchema = z.object({
-  title: z.string().min(1, {
-    message: "Title is Required",
-  }),
-});
 
 function CreateToDo() {
   const createTodo = useMutation(api.todos.addTodo);
